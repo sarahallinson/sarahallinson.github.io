@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<!-- 
+
+CDS3001 Communication Design Studio - Digital Publishing
+Assignment 1: Talking to Machines
+
+Sarah Allinson
+
+Week 03 - Tweet 04
+
+Source: https://twitter.com/MTV/status/1109847339932381184
+
+Is it normal that I've watched this @JonasBrothers video on a constant loop for the past three weeks?
+9:00 AM - 24 Mar 2019
+
+-->
+
+<html>
+	<head>
+		<title>
+			Tweet 04 - Week 3 - Talking to Machines
+		</title>
+		<style type="text/css">
+			/* Whole masthead */
+			.masthead {
+				position:fixed;
+				top:0px;
+				left:0px;
+				width:100vw;
+				height:70vh;
+			}
+
+			/* Boxes */
+			/* lb = looping box */
+			#lb {
+				position:absolute;
+				top:0px;
+				left:0px;
+
+				width:10vmax;
+				height:10vmax;
+
+				padding:1vmax;
+
+				background:#ffcc4c;
+				color:#470d02;
+
+				font-family:Georgia, serif;
+				font-style:italic;
+				font-weight:bold;
+				font-size:1.6vmax;
+				line-height:1.6vmax;
+				text-align:right;
+
+				animation:loop 20s linear infinite;
+			}
+
+			#date {
+				position:absolute;
+
+				top:25vh;
+				left:25vw;
+				z-index:-1;
+
+				padding:3vh;
+
+				font-family:Arial, sans-serif;
+				font-style:italic;
+				font-size:8vh;
+				letter-spacing:-0.5vmin;
+
+				background:#fff;
+				border:1px solid #fff;
+
+				animation:tcol 20s linear infinite;
+			}
+
+			#time {
+				position:absolute;
+
+				top:37vh;
+				left:42vw;
+				z-index:-2;
+
+				padding:3vh;
+
+				font-family:Arial, sans-serif;
+				font-size:8vh;
+				letter-spacing:-0.3vmin;
+
+				background:#fff;
+				border:1px solid #470d02;
+
+				animation:tcol 20s linear infinite;
+			}
+
+			/* Animation */
+			@keyframes loop {
+				0% {
+					top:1vh;
+					left:1vw;
+
+					background:#baf98e;
+					color:#470d02;
+				}
+				1% {
+					background:#ffcc4c;
+					color:#470d02;
+				}
+				30% {
+					top:1vh;
+					left:87vw;
+
+					background:#ffcc4c;
+					color:#470d02;
+				}
+				30.5% {
+					background:#8ef9cb;
+					color:#470d02;
+				}
+				50% {
+					top:58vh;
+					left:87vw;
+
+					background:#8ef9cb;
+					color:#470d02;
+				}
+				50.5%{
+					background:#f98ec1;
+					color:#470d02;
+				}
+				80% {
+					top:58vh;
+					left:1vw;
+
+					background:#f98ec1;
+					color:#470d02;
+				}
+				81% {
+					background:#baf98e;
+					color:#470d02;
+				}
+				100% {
+					top:1vh;
+					left:1vw;
+
+					background:#baf98e;
+					color:#;
+				}
+			}
+
+			@keyframes tcol {
+				0% {
+					color:#baf98e;
+					border:1px solid #baf98e;
+				}
+				1% {
+					color:#ffcc4c;
+					border:1px solid #ffcc4c;
+				}
+				30% {
+					color:#ffcc4c;
+					border:1px solid #ffcc4c;
+				}
+				30.5% {
+					color:#8ef9cb;
+					border:1px solid #8ef9cb;
+				}
+				50% {
+					color:#8ef9cb;
+					border:1px solid #8ef9cb;
+				}
+				50.5%{
+					color:#f98ec1;
+					border:1px solid #f98ec1;
+				}
+				80% {
+					color:#f98ec1;
+					border:1px solid #f98ec1;
+				}
+				81% {
+					color:#baf98e;
+					border:1px solid #baf98e;
+				}
+				100% {
+					color:#baf98e;
+					border:1px solid #baf98e;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="masthead">
+			<div id="lb">
+				I've watched this video on a loop for the past three weeks
+			</div>
+			<div id="date">
+				24 Mar 2019
+			</div>
+			<div id="time">
+				9:00 AM
+			</div>
+		</div>
+	</body>
+</html>

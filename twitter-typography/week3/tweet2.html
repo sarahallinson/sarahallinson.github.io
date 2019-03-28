@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<!-- 
+
+CDS3001 Communication Design Studio - Digital Publishing
+Assignment 1: Talking to Machines
+
+Sarah Allinson
+
+Week 03 - Tweet 02
+
+Source: https://twitter.com/MTV/status/1110270127554084864
+
+"Nobody likes Brent!!!" Tensions rise between Brent and Kylie during the #LohanBeachClub finale TONIGHT at 10/9c.
+1:00 PM - 25 Mar 2019
+
+-->
+
+<html>
+	<head>
+		<title>
+			Tweet 02 - Week 3 - Talking to Machines
+		</title>
+		<style type="text/css">
+			/* Whole masthead */
+			.masthead {
+				position:absolute;
+				top:0px;
+				left:0px;
+
+				width:100%;
+				height:100%;
+			}
+
+			/* Boxes */
+			.block {
+				position:absolute;
+
+				width:50vw;
+				height:10vh;
+
+				padding:20vh 0;
+
+				color:#fff;
+
+				font-family:Arial, sans-serif;
+				font-size:10vmin;
+				line-height:10vmin;
+				font-style:italic;
+				font-weight:bold;
+				text-align:center;
+				letter-spacing:-0.5vmin;
+			}
+
+			#b1 {
+				top:0px;
+				left:0px;
+
+				background:#f00;
+				animation:c1 5s linear infinite;
+			}
+
+			#b1:hover {
+				background:#0ff;
+				animation:i1 5s linear infinite;
+			}
+
+			/* date */
+			#b2 {
+				top:0px;
+				right:0px;
+
+				width:40vw;
+				height:40vh;
+				padding:5vh 5vw;
+
+				font-size:5vh;
+				line-height:5vh;
+				letter-spacing:-0.2vmin;
+				text-align:right;
+
+				background:#fff;
+				color:#000;
+			}
+
+			#b2:hover {
+				background:#000;
+				color:#fff;
+			}
+
+			#clock {
+				color:#000;
+
+				letter-spacing:0.1vmin;
+
+				animation: clock 1s linear infinite;
+			}
+
+			#clock:hover {
+				color:#fff;
+			}
+			
+			#b3 {
+				bottom:0px;
+				left:0px;
+
+				background:#0f0;
+				animation:c2 5s linear infinite;
+			}
+
+			#b3:hover {
+				background:#f0f;
+				animation:i2 5s linear infinite;
+			}
+
+
+			#b4{
+				bottom:0px;
+				right:0px;
+
+				background:#00f;
+				animation:c3 5s linear infinite;
+			}
+
+			#b4:hover {
+				background:#ff0;
+				animation:i3 5s linear infinite;
+			}
+
+
+			/* Animation */
+
+			@keyframes c1 {
+				0% {
+					background:#f00;
+				}
+				33%{
+					background:#0f0;
+				}
+				66%{
+					background:#00f;
+				}
+				100%{
+					background:#f00;
+				}
+			}
+
+			@keyframes c2 {
+				0% {
+					background:#0f0;
+				}
+				33%{
+					background:#00f;
+				}
+				66%{
+					background:#f00;
+				}
+				100%{
+					background:#0f0;
+				}
+			}
+
+			@keyframes c3 {
+				0% {
+					background:#00f;
+				}
+				33%{
+					background:#f00;
+				}
+				66%{
+					background:#0f0;
+				}
+				100%{
+					background:#00f;
+				}
+			}
+
+			@keyframes i1 {
+				0% {
+					background:#0ff;
+				}
+				33%{
+					background:#f0f;
+				}
+				66%{
+					background:#ff0;
+				}
+				100%{
+					background:#0ff;
+				}
+			}
+
+			@keyframes i2 {
+				0% {
+					background:#f0f;
+				}
+				33%{
+					background:#ff0;
+				}
+				66%{
+					background:#0ff;
+				}
+				100%{
+					background:#f0f;
+				}
+			}
+
+			@keyframes i3 {
+				0% {
+					background:#ff0;
+				}
+				33%{
+					background:#0ff;
+				}
+				66%{
+					background:#f0f;
+				}
+				100%{
+					background:#ff0;
+				}
+			}
+
+
+			@keyframes clock {
+				0% {
+					color:#fff;
+				}
+				2% {
+					color:#fff;
+				}
+				2% {
+					color:#000;
+				}
+				50% {
+					color:#000;
+				}
+				52% {
+					color:#fff;
+				}
+				100% {
+					color:#fff;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="masthead">
+			<div class="block" id="b1">
+				NOBODY
+			</div>
+			<div class="block" id="b2">
+				<div class="date">
+					25/03/2019
+				</div>
+				<div class="date">
+					1<span id="clock">:</span>00 PM
+				</div>
+			</div>
+			<div class="block" id="b3">
+				LIKES
+			</div>
+			<div class="block" id="b4">
+				BRENT!!!
+			</div>
+		</div>
+	</body>
+</html>

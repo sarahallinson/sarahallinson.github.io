@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<!-- 
+
+CDS3001 Communication Design Studio - Digital Publishing
+Assignment 1: Talking to Machines
+
+Sarah Allinson
+
+Week 03 - Tweet 01
+
+Source: https://twitter.com/MTV/status/1110330523002593280
+
+"I got a good therapist, I was blessed enough to talk to some super spiritual people, and they made me realize what I was missing in my life and one thing I was missing was clarity."
+5:00 PM - 25 Mar 2019
+
+-->
+
+<html>
+	<head>
+		<title>
+			Tweet 01 - Week 3 - Talking to Machines
+		</title>
+		<style type="text/css">
+			/* Whole masthead */
+			.masthead {
+				position:fixed;
+				top:110px;
+				left:0px;
+
+				width:100%;
+
+				letter-spacing:1px;
+
+			}
+
+			/* Structure */
+			#left {
+				display:inline-block;
+
+				margin-right:12px;
+
+				width:49%;
+				height:300px;
+
+				text-align:right;
+			}
+
+			#right {
+				display:inline-block;
+
+				width:49%;
+				height:300px;
+			}
+
+			/* Text */
+			/* mt = main text */
+			.mt {
+				color:#4a37cc;
+
+				font-family:Arial, sans-serif;
+				font-style:italic;
+				font-weight:bold;
+				font-size:50px;
+				line-height:90px;
+
+				margin-bottom:12px;
+			}
+
+			#date {
+				line-height:111px;
+
+				font-family:Courier, monospace;
+				font-size:20px;
+				font-weight:bold;
+				letter-spacing:0px;
+
+				color:#bfbfbf;
+			}
+
+
+			/* "clarity" */
+			.clarity {
+				width:450px;
+				height:90px;
+
+				margin-top:10px;
+				margin-bottom:10px;
+
+				color:#fff;
+
+				font-family:Arial, sans-serif;
+				font-style:italic;
+				font-weight:bold;
+				font-size:50px;
+				text-align:left;
+				line-height:90px;
+
+				background:linear-gradient(
+					90deg,
+					#fff 0%,
+					#fff 10%,
+					#4a37cc 10%,
+					#4a37cc 32%,
+					#fff 32%,
+					#fff 100%
+					);
+				background-size:200%;
+
+				animation: clarity 8s linear infinite;
+			}
+
+			.clarity:hover {
+				color:#4a37cc;
+
+				background:linear-gradient(
+					90deg,
+					#4a37cc 0%,
+					#4a37cc 10%,
+					#fff 10%,
+					#fff 32%,
+					#4a37cc 32%,
+					#4a37cc 100%
+					);
+				background-size:200%;
+
+				animation: clarity 8s linear infinite;
+			}
+
+			/* Animation */
+			@keyframes clarity {
+				0% {
+					background-position: 200% 50%;
+				}
+				50% {
+					background-position: 100% 100%;
+				}
+				100% {
+					background-position:0% 0%;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="masthead">
+			<div id="left">
+				<div class="mt">
+					they made me
+				</div>
+				<div class="mt">
+					what I was
+				</div>
+				<div id="date">
+					5:00 PM | 25/03/19
+				</div>
+			</div>
+			<div id="right">
+				<div class="clarity">
+					realise;
+				</div>
+				<div class="clarity">
+					missing.
+				</div>
+				<div class="clarity">
+					CLARITY
+				</div>
+			</div>
+			
+
+		</div>
+
+	</body>
+</html>

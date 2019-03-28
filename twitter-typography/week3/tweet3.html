@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<!-- 
+
+CDS3001 Communication Design Studio - Digital Publishing
+Assignment 1: Talking to Machines
+
+Sarah Allinson
+
+Week 03 - Tweet 03
+
+Source: https://twitter.com/MTV/status/1109892642639351809
+
+There's a v lovely & warm experience that I wanna invite you to join in on, and it's called ✨being a @mitskileaks fan!!!✨
+12:00 PM - 24 Mar 2019
+
+-->
+
+<html>
+	<head>
+		<title>
+			Tweet 03 - Week 3 - Talking to Machines
+		</title>
+		<style type="text/css">
+			body {
+				background:#fff8e0;
+			}
+			/* Whole masthead */
+			.masthead {
+				position:fixed;
+
+				top:0px;
+				left:0px;
+
+				width:100vw;
+				height:90vh;
+			}
+
+			/* Boxes */
+
+			#sky {
+				width:100vw;
+				height:35vh;
+
+				background:#8edfff;
+			}
+			
+			#ocean {
+				width:100vw;
+				height:25vh;
+
+				background:#1b7ab5;
+			}
+
+			#shore {
+				width:100vw;
+				height:15vh;
+
+				background:linear-gradient(
+					180deg,
+					#1b7ab5 0%,
+					#bfe6ff 50%,
+					transparent 100%
+					);
+
+				animation:shore 5s ease infinite;
+			}
+
+			/* Text */
+			.mt {
+				padding-top:15vh;
+				padding-right:5vw;
+				padding-left:5vw;
+
+				font-family:Georgia, serif;
+				font-style:italic;
+				font-size:5vh;
+				letter-spacing:0.2vh;
+
+				color:#1b7ab5;
+			}
+
+			/* ra = the right aligned bit */
+			.ra {
+				text-align:right;
+
+				color:#fff;
+			}
+
+			.date {
+				padding:1vh 1vw;
+
+				font-family:Arial, sans-serif;
+				font-weight:bold;
+				font-size:3vh;
+				text-align:right;
+				letter-spacing:-0.1vh;
+
+				color:#000;
+			}
+
+			/* Animation */
+			@keyframes shore {
+				0% {
+					height:15vh;
+					}
+				50% {
+					height:35vh;
+				}
+				100% {
+					height:15vh;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="masthead">
+			<div id="sky">
+				<div class="mt">
+					There's a lovely & warm experience
+				</div>
+				<div class="mt ra">
+					that I wanna invite you to join
+				</div>
+			</div>
+			<div id="ocean">
+				
+			</div>
+			<div id="shore">
+				
+			</div>
+			<div class="date">
+				12 o'clock - 24th March 2019
+			</div>
+		</div>
+	</body>
+</html>
