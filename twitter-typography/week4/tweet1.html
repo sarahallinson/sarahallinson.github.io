@@ -9,29 +9,179 @@ Sarah Allinson
 
 Week 04 - Tweet 01
 
-Source: 
+Source: https://twitter.com/MTV/status/1112368965173432321
+
+Quick clip of me listening to gossip I shouldn't know ☕️👀
+8:00 AM - 31 Mar 2019
 
 -->
 
 <html>
 	<head>
+		<meta charset="utf-8"/>
 		<title>
 			Tweet 01 - Week 4 - Talking to Machines
 		</title>
 		<style type="text/css">
 			/* Whole masthead */
 			.masthead {
-				
+				position:fixed;
+
+				top:0;
+				left:0;
+				right:0;
 			}
 
-			/*  */
-			
+			.wrapper {
+				position:relative;
+				display: inline-block;
+
+				width:400px;
+				height:400px;
+
+				padding:15px;
+
+				background:#ff0;
+			}
+
+			.twitter {
+				position:absolute;
+				display:inline-block;
+
+				left:400px;
+				right:0;
+				top:0;
+
+				height:400px;
+
+				padding:15px;
+
+				background:#fcfcfc;
+			}
+
+			/* Boxes + Text */
+			.topbar {
+				position:absolute;
+				height:50px;
+
+				top:0;
+				left:0;
+				right:0;
+
+				background:#1da1f2;
+			}
+
+			.date {
+				display:inline-block;
+
+				padding:10px;
+				margin:0 0 30px 0;
+
+				background:#fff;
+				border:4px solid #000;
+
+				font-family: Impact, Charcoal, sans-serif;
+				font-size:2.35vmin;
+				letter-spacing:0.1vmin;
+				box-shadow: 5px 5px 0px rgb(0,0,0,0.5);
+			}
+
+			.tweets {
+				margin-top:60px;
+				margin-left:250px;
+			}
+
+			.quote {
+				display:block;
+
+				width:15em;
+
+				margin-bottom:20px;
+				padding:10px;
+
+				background:#fff;
+				border:4px solid #000;
+
+				font-family: Impact, Charcoal, sans-serif;
+				font-size:3vmin;
+				letter-spacing:0.1vmin;
+				box-shadow: 5px 5px 0px rgb(0,0,0,0.5);
+			}
+
+			/* Images */
+			.imgmid {
+				display:block;
+			}
+
+			.intern {
+				display:inline-block;
+			}
+
+			.mtvlogo {
+				display:inline-block;
+				position:absolute;
+
+				top:70px;
+
+				width:300px;
+			}
+
+			.mtvlogo img {
+				width:200px;
+				margin-left:30px;
+			}
+
+			/* Tweets */
+			#t1 {
+				width:7em;
+			}
+
+			#t3 {
+				width:10em;
+			}
+
+			#t4 {
+				width:5em;
+			}
+
+			/* Animation */
+
 
 		</style>
 	</head>
 	<body>
 		<div class="masthead">
-			
+			<div class="wrapper">
+				<div class="date">
+					8:00 AM, MARCH 31 2019...
+				</div>
+				<div class="imgmid">
+					<div class="intern">
+						<img src="../../images/intern.gif">
+					</div>
+				</div>				
+			</div>
+			<div class="twitter">
+				<div class="topbar">
+					<div class="mtvlogo">
+						<img src="../../images/mtv-logo.png">
+					</div>
+				</div>
+				<div class="tweets">
+					<div class="quote" id="t1">
+						🥂🥂🥂💖✨
+					</div>
+					<div class="quote">
+						"Quick clip of me listening to gossip I shouldn't know ☕️👀"
+					</div>
+					<div class="quote" id="t3">
+						🔥💜⚡️💎✨💜🔥
+					</div>
+					<div class="quote" id="t4">
+						🤯😲💓
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

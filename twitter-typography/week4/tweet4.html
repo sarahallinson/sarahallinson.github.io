@@ -9,7 +9,12 @@ Sarah Allinson
 
 Week 04 - Tweet 04
 
-Source: 
+Source: https://twitter.com/MTVNEWS/status/1113193811570769920
+
+A family is making bank off of the opioid epidemic. @Dometi_ breaks down what you #NeedtoKnow about how the Sacklers, who misled millions about the addictiveness of OxyContin and are now also profiting off of opioid addiction treatment
+2:37 PM - 2 Apr 2019
+
+Image sources: Public domain images from Wikimedia Commons
 
 -->
 
@@ -21,17 +26,94 @@ Source:
 		<style type="text/css">
 			/* Whole masthead */
 			.masthead {
-				
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+
+				overflow:hidden;
+
+				background:#f00;
 			}
 
-			/*  */
-			
+			/* Boxes + Text */
+			.overlay {
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+
+				overflow:hidden;
+			}
+
+			.overlay img {
+				width:100vw;
+
+				mix-blend-mode:difference;
+			}
+
+			.mt {
+				position:absolute;
+				z-index:3;
+
+				width:30vw;
+				height:60vh;
+
+				padding:2vmax;
+
+				font-family:Georgia, serif;
+				font-size:4vh;
+				line-height:1.5em;
+				font-style:italic;
+
+				color:#fff;
+			}
+
+			.line {
+				margin-bottom:0.5em;
+			}
+
+			.emph {
+				background:#bf0505;
+			}
+
+			.emph:hover {
+				background:#40FAFA;
+			}
+
+			.heading {
+				font-family:Arial, sans-serif;
+				font-weight:bold;
+			}
+
+			.date {
+				font-size:2.5vh;
+				font-style:normal;
+			}
 
 		</style>
 	</head>
 	<body>
 		<div class="masthead">
-			
+			<div class="overlay">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/2/23/OxyContin_branded_oxycodone_10mg_%28OC_side%29.jpg">
+			</div>
+			<div class="overlay">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Oxycodone3DanBS.gif">
+			</div>
+			<div class="mt">
+				<div class="line date">
+					2:37 PM - 2 April 2019
+				</div>
+				<div class="line heading">
+					A family is making bank off the opioid epidemic.
+				</div>
+				 <div class="line">
+				 	The Sacklers misled millions about the addictiveness of <span class="emph">OxyContin</span> and are now also profiting off of opioid addiction treatment.
+				 </div>
+			</div>
 		</div>
 	</body>
 </html>

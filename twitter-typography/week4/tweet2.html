@@ -9,7 +9,12 @@ Sarah Allinson
 
 Week 04 - Tweet 02
 
-Source: 
+Source: https://twitter.com/MTV/status/1112791745807314944
+
+"The ultimate goal is to take over."
+12:00 PM - 1 Apr 2019
+
+Video source: Public domain video from Wikimedia Commons
 
 -->
 
@@ -21,17 +26,136 @@ Source:
 		<style type="text/css">
 			/* Whole masthead */
 			.masthead {
-				
+				position:absolute;
+
+				top:0;
+				left:0;
+				right:0;
+
+				height:80vh;
+
+				background:#000;
+
+				animation: bg_01 6s linear infinite;
 			}
 
-			/*  */
-			
+			.wrapper {
+				position:relative;
+
+				height:80vh;
+
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+			}
+
+			/* Boxes + Text */
+			.text {
+				color:#fff;
+
+				font-family:Arial, sans-serif;
+				font-size:24px;
+
+				mix-blend-mode:difference;
+			}
+
+			.mt {
+				position:absolute;
+
+				margin:0 auto;
+				left:15vw;
+				right:15vw;
+				top:30vh;
+
+				font-weight:bold;
+				font-size:5vh;
+				line-height:5vh;
+				letter-spacing:0.2vh;
+				text-align:center;
+			}
+			.q {
+				position:absolute;
+
+				top:26vh;
+
+				font-size:20vh;
+			}
+
+			.qml {
+				left:5vw;
+			}
+			.qmr {
+				right:5vw;
+			}
+
+			.date {
+				position:absolute;
+
+				margin:0 auto;
+				left:15vw;
+				right:15vw;
+				top:40vh;
+
+				text-align:center;
+			}
+
+			.overlay {
+				position:absolute;
+				top:0;
+				left:0;
+				right:0;
+				bottom:0;
+
+				background-image:url("../../images/riot.gif");
+				opacity:0.5;
+				mix-blend-mode:hard-light;
+			}
+
+			/* Animations */
+			@keyframes bg_01 {
+				0% {
+					background:#000;
+				}
+				32% {
+					background:#000;
+				}
+				33% {
+					background:#bf0505;
+				}
+				65% {
+					background:#bf0505;
+				}
+				66% {
+					background:#fff;
+				}
+				99% {
+					background:#fff;
+				}
+				100% {
+					background:#000;
+				}
+			}
 
 		</style>
 	</head>
 	<body>
 		<div class="masthead">
-			
+			<div class="wrapper">
+				<div class="overlay"></div>
+				<div class="text q qml">
+					“
+				</div>
+				<div class="text q qmr">
+					”
+				</div>
+				<div class="text mt">
+					THE ULTIMATE GOAL IS TO TAKE OVER.
+				</div>
+				<div class="text date">
+					12:00 PM - 1 Apr 2019
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
