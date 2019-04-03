@@ -24,17 +24,139 @@ I have been alerted that #NationalPuppyDay isn't actually until tomorrow, but YO
 		<style type="text/css">
 			/* Whole masthead */
 			.masthead {
-				
+				position:relative;
+
+				width:70vw;
+
+				margin:5vh auto;
+
+				padding:12px;
+				padding-bottom:7vmin;
+
+				background:linear-gradient( 
+					45deg,
+					#5fefe8,
+					#efec5f,
+					#ef805f
+					);
 			}
 
-			/*  */
-			
+			/* Text */
+			.mt {
+				font-family:Arial, sans-serif;
+				font-weight:bold;
+				letter-spacing:0.15vmin;
+				font-size:7vmin;
+
+				color:#00f;
+				mix-blend-mode:soft-light;
+			}
+
+			.date {
+				position:absolute;
+				bottom:0;
+				right:0;
+
+				padding:12px;
+
+				font-family:Arial, sans-serif;
+				font-style:italic;
+				font-size:2.8vmin;
+				letter-spacing:-0.05vmin;
+				text-align:right;
+
+				color:#0ff;
+				mix-blend-mode:difference;
+			}
+
+			#ty {
+				font-family:Georgia, serif;
+				font-size:3vmin;
+				letter-spacing:-0.1vmin;
+				font-weight:bold;
+			}
+
+			a {
+				text-decoration:none;
+				color:#0f0;
+				background:#a00;
+				mix-blend-mode:difference;
+			}
+
+			a:hover {
+				color:#a00;
+				background:#0f0;
+				mix-blend-mode:difference;
+
+			}
+
+			/* Structure */
+			.block {
+				position:absolute;
+				top:17px;
+				left:17px;
+
+				margin-top:8vmin;
+
+				color:#0f0;
+				mix-blend-mode:difference;
+			}
+
+			.b2 {
+				color:#0f0;
+				mix-blend-mode:soft-light;
+			}
+
+			.anim {
+				animation: cc 3s linear infinite;
+			}
+
+			/* Animation */
+			/* cc = colour change */
+			@keyframes cc {
+				0% {
+				color:#0f0;
+				}
+				50% {
+				color:#f0f;
+				}
+				100% {
+				color:#0f0;
+				}
+			}
 
 		</style>
 	</head>
 	<body>
 		<div class="masthead">
-			
+			<div>
+				<div class="mt">
+				<a href="https://twitter.com/hashtag/nationalpuppyday">#NationalPuppyDay</a> is tomorrow
+				</div>
+				<div class="mt">
+					but YOU KNOW WHAT????
+				</div>
+				<div class="mt">
+					EVERY SINGLE DAY 
+				</div>
+				<div class="mt">
+					IS NATIONAL PUPPY DAY.
+				</div>
+			</div>
+			<div class="block">
+				<div class="mt b2">
+					but YOU KNOW WHAT????
+				</div>
+				<div class="mt b2">
+					EVERY SINGLE DAY 
+				</div>
+				<div class="mt b2">
+					IS <span class="anim">NATIONAL PUPPY DAY</span>
+				</div>
+			</div>
+			<div class="date">
+				<span id="ty">Thank you for your time.</span> 2:45 PM 22/03/19
+			</div>
 		</div>
 	</body>
 </html>
