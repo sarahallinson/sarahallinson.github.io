@@ -160,7 +160,16 @@ body {
 }
 
 .iconicimg {
-	
+	position:fixed;
+
+	z-index:-1;
+
+	right:-8vh;
+	bottom:-2.5vh;
+}
+
+.iconicimg img {
+	height:80vh;
 }
 
 /* Animations */
