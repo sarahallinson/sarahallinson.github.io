@@ -468,6 +468,8 @@ a:visited {
 	width:200vmin;
 	margin-left:calc(50vw - 100vmin);
 
+	overflow-y:hidden;
+	overflow-x:hidden;
 }
 
 .ring2 img {
