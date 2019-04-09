@@ -34,16 +34,27 @@ body {
 
 	background:var(--light, #F9F8F7);
 
+	/*
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+
+	overflow-y:scroll;
+	overflow-x:hidden;
+
+	*/
 }
 
 .wrapper {
-	overflow-y:scroll;
+	
+	overflow-y:;
 	overflow-x:hidden;
 	height:100vh;
 
 	scroll-snap-type: mandatory;
 	scroll-snap-points-y: repeat(100vh);
 	scroll-snap-type: y mandatory;
+
 }
 
 p {
@@ -201,6 +212,8 @@ a:visited {
 	min-width:60vw;
 	max-width:800px;
 
+	z-index:2;
+
 	margin:0 auto;
 	margin-top:4em;
 
@@ -354,8 +367,8 @@ a:visited {
 }
 
 .intro .sbl {
-	position:relative;
-	margin-top:70vh;
+	position:absolute;
+	bottom:2em;
 
 	z-index:2;
 }
@@ -407,6 +420,8 @@ a:visited {
 }
 
 .child {
+	position:relative;
+
 	scroll-snap-align:start;
 }
 
@@ -414,19 +429,64 @@ a:visited {
 	height:100vh;
 
 	overflow-y:hidden;
+	overflow-x:hidden;
 }
 
-#vortex {
-	position:absolute;
-	top:0;
+.vortex {
+	position:relative;
+	margin-left:calc(50vw - 50vmin);
 
-	width:100%;
+	height:100vh;
+	width:100vmin;
+
+	z-index:1;
+
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+
+.vortex img {
+	position:absolute;
+
+	top:0;
+	left:0;
+
+	max-width:100vmin;
 
 	margin:0 auto;
+}
 
-	text-align:center;
+#inner-ring {
+	animation:ring 8s linear infinite;
+}
+
+#outer-ring {
+	animation:ring 15s linear infinite;
+}
+
+.ring2 {
+	width:200vmin;
+	margin-left:calc(50vw - 100vmin);
+
+}
+
+.ring2 img {
+	top:calc(50vh - 100vmin);
+
+	max-width:200vmin;
 }
 
 .ce {
 	color:var(--accent-dark, #EFE82E);
+}
+
+/* Animations */
+
+@keyframes ring {
+	0% {
+
+	}
+	100% {
+		transform:rotate(360deg);
+	}
 }
