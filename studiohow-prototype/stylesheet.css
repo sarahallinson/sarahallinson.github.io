@@ -375,6 +375,8 @@ a:visited {
 	bottom:2em;
 
 	z-index:2;
+
+	animation:sbbob 2s ease-in-out infinite;
 }
 
 .sbl:before {
@@ -419,6 +421,8 @@ a:visited {
 .intro {
 	right:0;
 	left:0;
+
+	z-index:;
 
 	background:#189caf;
 }
@@ -488,14 +492,21 @@ a:visited {
 
 	left:-10vw;
 	bottom:-30vh;
+
+	animation:bob 2s ease-in-out infinite;
+
 }
 
 .boat img {
 	width:50vmin;
+
+	
 }
 
 .boattop {
 	bottom:70vh;
+
+	animation:bob2 2s ease-in-out infinite;
 }
 
 .ce {
@@ -510,5 +521,41 @@ a:visited {
 	}
 	100% {
 		transform:rotate(360deg);
+	}
+}
+
+@keyframes bob {
+	0% {
+		bottom:-30vh;
+	}
+	50% {
+		bottom:-26vh;
+	}
+	100% {
+		bottom:-30vh;
+	}
+}
+
+@keyframes bob2 {
+	0% {
+		bottom:70vh;
+	}
+	50% {
+		bottom:74vh;
+	}
+	100% {
+		bottom:70vh;
+	}
+}
+
+@keyframes sbbob {
+	0% {
+		bottom:2em;
+	}
+	50% {
+		bottom:2.5em;
+	}
+	100% {
+		bottom:2em;
 	}
 }
