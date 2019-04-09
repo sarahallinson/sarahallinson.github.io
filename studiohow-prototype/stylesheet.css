@@ -296,6 +296,10 @@ a:visited {
 	object-fit:contain;
 }
 
+.intro .ifc {
+	margin:25vh auto;
+}
+
 /* speech bubble (l = left, r = right) */
 /* Source: https://leaverou.github.io/bubbly/ */
 .sb {
@@ -456,26 +460,42 @@ a:visited {
 	margin:0 auto;
 }
 
-#inner-ring {
+.inner-ring {
 	animation:ring 8s linear infinite;
 }
 
-#outer-ring {
+.outer-ring {
 	animation:ring 15s linear infinite;
 }
 
 .ring2 {
 	width:200vmin;
 	margin-left:calc(50vw - 100vmin);
-
-	overflow-y:hidden;
-	overflow-x:hidden;
 }
 
 .ring2 img {
 	top:calc(50vh - 100vmin);
 
 	max-width:200vmin;
+}
+
+.boat {
+	position:absolute;
+
+	width:30vmin;
+
+	z-index:2;
+
+	left:-10vw;
+	bottom:-30vh;
+}
+
+.boat img {
+	width:50vmin;
+}
+
+.boattop {
+	bottom:70vh;
 }
 
 .ce {
