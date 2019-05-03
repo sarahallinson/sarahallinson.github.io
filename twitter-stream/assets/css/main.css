@@ -1,4 +1,5 @@
 :root {
+	--padding-huge:40px;
 	--padding-big:20px;
 	--padding-small:10px;
 	--padding-tiny:5px;
@@ -23,6 +24,8 @@ a {
 
 	box-shadow:0 0 10px grey;
 
+	background:#fff;
+
 	display:flex;
 
 }
@@ -33,11 +36,27 @@ a {
 }
 
 .main {
-	
+	max-width:800px;
+
+	margin:0 auto;
+	margin-top:120px;
 }
 
 .title {
 	
+}
+
+.twt {
+	margin-top:var(--padding-huge, 40px);
+	margin-bottom:var(--padding-huge, 40px);
+}
+
+.tweet {
+	width:100%;
+	min-height:400px;
+
+	box-shadow:0 0 10px grey;
+	border-radius:var(--padding-big, 20px);
 }
 
 /*
@@ -51,6 +70,5 @@ img {
 }
 
 iframe {
-	min-width:50%;
-	min-height:50vh;
+	
 }
