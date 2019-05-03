@@ -1,0 +1,56 @@
+:root {
+	--padding-big:20px;
+	--padding-small:10px;
+	--padding-tiny:5px;
+}
+
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+a {
+	color:red;
+}
+
+.nav {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100vw;
+
+	padding:var(--padding-big, 20px);
+
+	box-shadow:0 0 10px grey;
+
+	display:flex;
+
+}
+
+.nav-item {
+	/*padding:var(--padding-tiny, 5px);*/
+	flex:0 0 33.33%;
+}
+
+.main {
+	
+}
+
+.title {
+	
+}
+
+/*
+.width-50 {
+	width:50%;
+}
+*/
+
+img {
+	width: 100%;
+}
+
+iframe {
+	min-width:50%;
+	min-height:50vh;
+}
