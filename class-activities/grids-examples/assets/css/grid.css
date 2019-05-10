@@ -1,0 +1,53 @@
+:root {
+	--padding-huge:40px;
+	--padding-big:20px;
+	--padding-small:10px;
+	--padding-tiny:5px;
+}
+
+
+/*setup your .grid with display flex and flex wrap*/
+.grid {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+
+/*setup your .col with padding */
+.col {
+	padding:var(--padding-big, 20px);
+}
+
+
+/*setup your .content with padding */
+.content {
+	padding:var(--padding-big, 20px);
+}
+
+
+/*setup your .w-1of4 widths with flex:0 0 25%; */
+.w-1of4 {
+	flex:0 0 25%;
+}
+
+
+/*setup your additional grid widths as you need them */
+.w-3of4 {
+	flex:0 0 75%;
+}
+
+.w-1of3 {
+	flex:0 0 calc(100% / 3);
+}
+
+.w-2of3 {
+	flex:0 0 calc(200% / 3);
+}
+
+.w-1of2 {
+	flex:0 0 50%;
+}
+
+.w-1of1 {
+	flex:0 0 100%;
+}
