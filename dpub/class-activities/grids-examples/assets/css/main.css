@@ -50,7 +50,9 @@ img {
 }
 
 .twopage .col {
+	height:100vh;
 
+	overflow-y:scroll;
 }
 
 .align-bottom {
