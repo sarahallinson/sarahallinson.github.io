@@ -1,0 +1,79 @@
+/* Colours */
+
+.bg-black {
+	background:#000;
+}
+
+.bg-white {
+	background:#fff;
+}
+
+.txt-black {
+	color:#000;
+}
+
+.txt-white {
+	color:#fff;
+}
+
+.bdr-black {
+	border:1px solid #000;
+}
+
+
+/* Page Palettes */
+/* Change colour of links to match background */
+
+/* CMYK */
+
+.cmyk a:nth-of-type(4n-3), .cmyk a:nth-of-type(4n-3):hover {
+	color:#ff7f3f; /*Orange*/
+}
+
+.cmyk a:nth-of-type(4n-2), .cmyk a:nth-of-type(4n-2):hover {
+	color:#ff007f; /*Magenta*/
+}
+
+.cmyk a:nth-of-type(4n-1), .cmyk a:nth-of-type(4n-1):hover {
+	color:#b52bb5; /*Purple*/
+}
+
+.cmyk a:nth-of-type(4n), .cmyk a:nth-of-type(4n):hover {
+	color:#00bfff; /*Cyan*/
+}
+
+
+
+/* RGB */
+
+.rgb a:nth-of-type(3n-2), .rgb a:nth-of-type(3n-2):hover {
+	color:#23ca00; /*Green*/
+}
+
+.rgb a:nth-of-type(3n-1), .rgb a:nth-of-type(3n-1):hover {
+	color:#f13f3f; /*Red*/
+}
+
+.rgb a:nth-of-type(3n), .rgb a:nth-of-type(3n):hover {
+	color:#0000eb; /*Blue*/
+}
+
+
+/* BW */
+
+.bnw a, .bnw a:hover {
+	color:magenta; /*Magenta*/
+}
+
+
+/* Fix navigation links */
+
+.console .nav a, .rgb .nav a, .cmyk .nav a, .bnw .nav a {
+	color:#000;
+}
+
+/* Console */
+
+.console a, .console a:hover {
+	color:#0ebd0e; /*Green*/
+}

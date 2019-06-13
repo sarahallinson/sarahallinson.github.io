@@ -1,0 +1,55 @@
+/*
+
+Grid Layout controls
+
+*/
+
+.grid {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-end;
+}
+
+.shop .grid {
+	justify-content:flex-start;
+}
+
+.col {
+
+}
+
+.row {
+
+}
+
+.content {
+	padding-top:15px;
+	padding-right:15px;
+	padding-bottom:15px;
+}
+
+/* sizes */
+
+.w-1of4 {
+	flex:0 0 25%;
+}
+
+.w-3of4 {
+	flex:0 0 75%;
+}
+
+.w-1of3 {
+	flex:0 0 calc(100% / 3);
+}
+
+.w-2of3 {
+	flex:0 0 calc(200% / 3);
+}
+
+.w-1of2 {
+	flex:0 0 50%;
+}
+
+.w-1of1 {
+	flex:0 0 100%;
+}

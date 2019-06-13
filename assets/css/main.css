@@ -1,0 +1,287 @@
+/* Defaults */
+
+body {
+	width:100%;
+	min-height:100%;
+
+	overflow-x:hidden;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing:border-box;
+}
+
+a {
+	font-style:italic;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+a:hover {
+	font-family:courier-std, monospace;
+	font-style:normal;
+	font-size:1.2em;
+	letter-spacing:-20%;
+}
+
+img  {
+	width:100%;
+	image-rendering:pixelated;
+}
+
+p {
+	margin-bottom:1em;
+}
+
+/* Classes */
+
+/* Page container */
+.main {
+	width:100%;
+	height:100%;
+}
+
+/* Draggable boxes*/
+.drag-box {
+	position:relative;
+
+	max-width:780px;
+	min-height:100px;
+
+	cursor:move;
+
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.nodrag {
+	position:relative;
+
+	max-width:780px;
+	min-height:100px;
+
+	padding-left:15px;
+	padding-right:15px;
+}
+
+/* Container for main content */
+
+.main-content {
+	margin-top:0vh;
+	margin-left:-10px;
+}
+
+.main-content .drag-box, .main-content .nodrag {
+	margin-top:35px;
+	margin-bottom:20px;
+}
+
+.main-content .drag-box:nth-child(2n), .main-content .nodrag:nth-child(2n) {
+	margin-left:10vw;
+}
+
+
+/* Navigation box */
+.nav {
+	max-width:450px;
+	min-height:50px;
+
+	position:fixed;
+
+	top:10vh;
+	right:30px;
+
+	z-index:1;
+
+	text-align:justify;
+}
+
+.nav a {
+	color:#000;
+
+	font-size:16px;
+	line-height:19px;
+	font-weight:bold;
+}
+
+.nav a:hover {
+	text-decoration:none;
+
+	font-family:courier-std, monospace;
+	font-style:normal;
+	font-weight:bold;
+	font-size:18px;
+	letter-spacing:-20%;
+}
+
+.nav a:visited {
+	color:#000;
+}
+
+/* Book info box */
+.bookinfo {
+	position:fixed;
+
+	min-width:255px;
+	max-width:410px;
+
+	float:right;
+	right:15px;
+	top:25vh;
+
+	z-index:1;
+}
+
+.bookinfo img {
+	min-width:100px;
+}
+
+/* Typeface controls for new (contemporary) vs old (e-zine) */
+.old {
+	font-family:courier-std, monospace;
+	font-size:16px;
+	line-height:1.2em;
+
+}
+
+.new {
+	font-family:Arial, sans-serif;
+	font-size:16px;
+	line-height:1.2em;
+}
+
+.title {
+	font-size:24px;
+	line-height:1.2em;
+	font-weight:bold;
+}
+
+.bigquote {
+	font-family:Arial, sans-serif;
+	font-size:7.35vh;
+	line-height:1.2em;
+	font-weight:bold;
+
+	padding-left:15px;
+	margin-bottom:5px;
+
+	max-width:660px;
+}
+
+.heading {
+	font-weight:bold;
+}
+
+
+/* Full size background video or image*/
+.bg-fullsize {
+	position:fixed;
+
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+
+	width:100vw;
+	height:100vh;
+	object-fit:cover;
+	overflow-y:hidden;
+}
+
+.bg-fullsize video {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+.bg-fullsize img {
+	position:fixed;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+
+/* Blackout text */
+
+.blackout {
+	background:#000;
+	color:#000;
+}
+
+.blackout-hover {
+	background:#000;
+	color:#000;
+}
+
+.blackout-hover:hover {
+	color:#fff;
+}
+
+/* Shop */
+
+.shop {
+	margin-top:10vh;
+	margin-left:40px;
+}
+
+.left2of3 {
+	left:0;
+	top:0;
+
+	max-width:calc(100vw * (2/3));
+}
+
+.shop-item {
+	min-width:300px;
+	max-width:80vw;
+
+	margin:10px;
+}
+
+.shop-item:nth-child(3n-1) {
+	top:50px;
+}
+
+.shop-item:nth-child(3n) {
+	top:100px;
+}
+
+.shop .drag-box {
+	max-width:300px;
+	padding-right:0;
+}
+
+.shop img {
+	image-rendering:auto;
+}
+
+/* Reference page */
+.reference {
+	word-wrap:break-word;
+}
+
+.references a {
+	text-transform:none;
+	word-break:break-all;
+}
+
+.references a:hover {
+	font-family:Arial, sans-serif;
+	font-style:normal;
+	font-size:1em;
+	letter-spacing:0%;
+}
+
+
+/* Image fixes */
+
+.photo {
+	image-rendering:auto;
+}
+
+.paddingfix {
+	padding-top:15px;
+	padding-bottom:15px;
+}
