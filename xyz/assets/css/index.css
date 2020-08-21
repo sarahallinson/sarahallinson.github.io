@@ -43,3 +43,7 @@ img {
 	flex-shrink:1;
 }
 
+.image {
+	max-width:32vw;
+}
+
