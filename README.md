@@ -1,15 +1,15 @@
 # sarahallinson.github.io
 
 
-URL:
+URL:<br/>
 sarahallinson.github.io
 
 
-2019:
-sarahallinson.github.io/2019/dpub/
-CDS3001 Communication Design Studio - Digital Publishing
-CDS3001 Communication Design Studio - "How"
+2019:<br/>
+sarahallinson.github.io/2019/dpub/ <br/>
+CDS3001 Communication Design Studio - Digital Publishing <br/>
+CDS3001 Communication Design Studio - "How" <br/>
 
 
-2020:
+2020: <br/>
 CDS3002 Communication Design Studio - Digital Publishing
