@@ -1,0 +1,62 @@
+body {
+	font-size: 60px;
+
+	overflow:hidden;
+
+	background:#fcfcfc;
+}
+
+a {
+	color:red;
+}
+
+#poster {
+	width:105vw;
+	height:100vh;
+
+	position:relative;
+	left:-1vw;
+	top:-1vh;
+
+	font-size: 5vw;
+	line-height:0.95em;
+	word-break:break-all;
+}
+
+.signSymbol {
+	font-family: "Segoe UI Symbol" ;
+	letter-spacing: 5px;
+	font-size:4.85vw;
+}
+
+.randEmoji {
+	font-family:Arial;
+	font-size:4vw;
+	position:relative;
+	bottom:0.075em;
+}
+
+.randUnder {
+	text-decoration: line-through;
+	color:#aaa;
+}
+
+.sentence {
+	font-family: Arial, sans-serif;
+	background:red;
+	color:white;
+	font-weight:bold;
+	font-style:italic;
+
+	position:relative;
+	bottom:0.05em;
+}
+
+.info {
+	font-family:Arial, sans-serif;
+	background:#222;
+	color:white;
+
+	position:relative;
+	bottom:0.05em;
+}

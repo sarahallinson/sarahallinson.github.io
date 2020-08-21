@@ -1,0 +1,110 @@
+:root {
+	--sign:crimson;
+}
+
+body {
+	font-family: Arial,sans-serif;
+	font-size: 60px;
+
+	overflow:hidden;
+}
+
+a {
+	color:red;
+}
+
+
+.poster {
+	max-width:100vw;
+	min-height:100vh;
+
+	/*background-image: linear-gradient(to right, red, yellow);*/
+}
+
+.signSymbol {
+	font-family: Segoe UI Symbol;
+	color:var(--sign);
+}
+
+#rightblock {
+	position:fixed;
+	right:10px;
+	width:40vw;
+	bottom:2vh;
+
+	background:#fbfbfb;
+	border-left:2px solid #101010;
+	border-right:2px solid #101010;
+}
+
+#info {
+	font-size:2vw;
+	text-align:left;
+	text-transform:uppercase;
+
+	display:flex;
+	justify-content:space-between;
+
+	margin-top:0.65em;
+}
+
+.info-block {
+	display:inline-block;
+	min-width:25%;
+	max-width:50%;
+	height:10vh;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.info-block:nth-child(2){
+	border-left:2px solid #101010;
+	border-right:2px solid #101010;
+}
+
+.sentence {
+	width:100%;
+
+	padding:10px;
+
+	font-size:2.8vw;
+	text-align:left;
+	line-height:0.95em;
+	color:#222;
+	text-transform:lowercase;
+	letter-spacing:-0.02em;
+}
+
+#repeatBox {
+	position:fixed;
+	top:-33vh;
+	left:-25vw;
+	width:200vw;
+	height:300vh;
+	transform:rotate(-18deg);
+
+	font-weight:bold;
+	text-transform:uppercase;
+	font-size:7vw;
+
+	word-break:break-all;
+
+	/* gradient with assistance from: https://cssgradient.io/ */
+	background:linear-gradient(
+		rgba(189,114,240,1) 0%, 
+		rgba(255,118,118,1) 33%, 
+		rgba(255,196,114,1) 69%, 
+		rgba(249,255,153,1) 100%);
+}
+
+/* animations */
+
+.scroll {
+	animation:scroll 12s linear infinite alternate;
+}
+
+@keyframes scroll {
+	100% {
+		transform:rotate(-18deg) translate(-50vh, -100vh);
+	}
+}

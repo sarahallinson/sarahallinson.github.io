@@ -1,0 +1,43 @@
+:root {
+	--sign:crimson;
+}
+
+body {
+	font-family: input-mono-compressed, monospace;
+	font-size: 42px;
+	font-weight:400;
+
+	overflow-x:hidden;
+}
+
+a {
+	color:red;
+}
+
+#main {
+	width:100vw;
+	min-height:100vh;
+
+	display:flex;
+	flex-wrap:wrap;
+	grid-gap:10px;
+	padding:10px;
+
+	background:#fabbbb;
+}
+
+.box {
+	border:1px solid #333;
+	border-radius:20px;
+	padding:10px;
+
+	min-width:20vw;
+
+	flex-grow:1;
+	flex-shrink:1;
+}
+
+.wide {
+	flex-grow:3;
+	flex-shrink:1;
+}

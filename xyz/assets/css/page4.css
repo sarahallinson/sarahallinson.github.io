@@ -1,0 +1,106 @@
+:root {
+	--size-type:45px;
+	--sign:crimson;
+}
+
+body {
+	font-family: Georgia;
+	font-style: italic;
+	font-size: var(--size-type);
+	font-weight:bold;
+	text-align: center;
+
+	height:175vh;
+	overflow-x: hidden;
+
+	background:linear-gradient(#fbfbfb, var(--sign));
+}
+
+a {
+	color:red;
+}
+
+#info {
+	font-size: 7vh;
+}
+
+.t-date {
+	position:fixed;
+	/*bottom:-1.8vh;*/
+	top:0;
+	left:-0.1em;
+
+
+	text-align: center;
+	line-height:70%;
+}
+
+.t-mada {
+	position:fixed;
+	/*top:-1.8vh;*/
+	bottom:0;
+	left:-0.1em;
+	
+	font-size:45vh;
+	text-align: center;
+	line-height:70%;
+}
+
+.t-sub {
+	position:fixed;
+	bottom:33vh;
+	left:-0.1em;
+
+	font-size:7vh;
+	font-family:sans-serif;
+	text-transform: uppercase;
+}
+
+.sentence {
+	margin-top:45vh;
+	margin-right:10px;
+	margin-left:37vw;
+	line-height:1.2em;
+	width:60vw;
+
+	text-align:right;
+
+}
+
+.sentence:nth-child(odd) {
+	margin-top:90vh;
+}
+
+.skew-left {
+	letter-spacing:-0.2em;
+	font-style: normal;
+	transform:skew(23deg);
+}
+
+
+/* animations */
+
+.bounce {
+	position:absolute;
+	top:54vh;
+	right:1em;
+
+	animation: bounce 2.5s infinite;
+
+	color:var(--sign);
+	opacity:42%;
+}
+
+@keyframes bounce {
+	0% {
+		margin-top:0;
+	}
+
+	50% {
+		margin-top:1em;
+	}
+
+	100% {
+		margin-top:0;
+	}
+} 

@@ -1,0 +1,132 @@
+:root {
+	--size-type:45px;
+	--sign:crimson;
+}
+
+body {
+	font-family: input-mono-compressed, monospace;
+	font-size: var(--size-type);
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing:-0.03em;
+
+	width:100vw;
+	height:100vh;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	color:black;
+
+	background: linear-gradient(45deg, var(--sign), #fbfbfb);
+	background-size: 400% 400%;
+	animation: movingGradient 5s linear 0s infinite;
+}
+
+a {
+	color:red;
+}
+
+#info {
+	position:fixed;
+	top:1vw;
+	right:1.5vw;
+
+	font-weight: 400;
+	text-align: right;
+}
+
+.t-date {
+	border-top: 2px solid black;
+	padding-top:0.1em;
+}
+
+.t-mada {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	padding-top:0.1em;
+}
+
+.t-sub {
+	border-top: 2px solid black;
+	padding-top:0.1em;
+}
+
+.sentence {
+	font-size:4vw;
+
+	animation: lineheight 3s ease-out 0s infinite alternate;
+}
+
+.angle-left {
+	position:fixed;
+	width:50vw;
+	top:64.5vh;
+	right:63vw;
+
+	transform:rotate(-25deg) skew(-25deg);
+
+	text-align:right;
+}
+
+.angle-right {
+	position:fixed;
+	width:65vw;
+	top:70.5vh;
+	left:33vw;
+
+	transform:rotate(25deg) skew(25deg);
+
+	text-align:left;
+}
+
+.fade {
+	opacity:66%;
+}
+
+.fade2 {
+	opacity:33%;
+}
+
+/*
+.skew-left {
+	letter-spacing:-0.2em;
+	font-style: normal;
+	transform:skew(23deg);
+}
+*/
+
+/* animations */
+
+.bounce {
+	position:absolute;
+	top:54vh;
+	right:1em;
+
+	animation: bounce 2.5s infinite;
+
+	color:var(--sign);
+	opacity:42%;
+}
+
+@keyframes movingGradient {
+	0% {
+		background-position:0% 50%;
+	}
+    50% {
+    	background-position:100% 50%;
+    }
+    100% {
+    	background-position:0% 50%;
+    }
+} 
+
+@keyframes lineheight {
+	0% {
+		line-height:1em;
+	}
+	100% {
+		line-height:3em;
+	}
+}

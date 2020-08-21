@@ -1,0 +1,102 @@
+:root {
+	--sign:crimson;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 60px;
+	font-weight:400;
+
+	overflow:hidden;
+}
+
+a {
+	color:red;
+}
+
+
+.poster {
+	width:100vw;
+	height:100vh;
+
+	/*background-image: linear-gradient(to right, var(--sign), #fabbbb);*/
+}
+
+.signSymbol {
+	font-family: Segoe UI Symbol;
+	/*color:var(--sign);
+	font-size:0.9em;
+	position:relative;
+	bottom:0.05em;*/
+}
+
+#grid {
+	width:100vw;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.grid-block {
+	min-width:calc(100vw / 7);
+	min-height:calc(100vh / 4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 100%;
+}
+
+.grid-block:hover {
+	background:var(--sign);
+}
+
+.grid-text {
+	text-align:center;
+	color:white;
+}
+
+#info {
+
+}
+
+.info-block {
+
+}
+
+.sentence {
+	
+}
+
+/* shapes 
+
+.square {
+	width:20vh;
+	height:20vh;
+	background:var(--sign);
+	box-shadow: 10px 10px 20px 10px var(--sign);
+}
+
+.circle {
+	width:20vh;
+	height:20vh;
+	border-radius:100%;
+	background:var(--sign);
+	box-shadow: 10px 10px 20px 10px var(--sign);
+}
+
+.oval {
+	width:30vh;
+	height:20vh;
+	border-radius:100%;
+	background:var(--sign);
+	box-shadow: 0px 0px 30px 10px var(--sign);
+}
+
+.inline {
+	display:inline-block;
+}
+
+.overflow {
+	overflow:scroll;
+}
+*/
