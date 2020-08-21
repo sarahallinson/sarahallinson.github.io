@@ -12,4 +12,5 @@ CDS3001 Communication Design Studio - "How" <br/>
 
 
 2020: <br/>
-CDS3002 Communication Design Studio - Digital Publishing
+CDS3002 Communication Design Studio - Digital Publishing <br/>
+Project 01 XYZ: sarahallinson.github.io/xyz/
