@@ -48,14 +48,14 @@ var signColour = [
 	"darkorange", //taurus
 	"gold", //gemini
 	"crimson", //cancer
-	"limegreen", //leo
+	"#009900", //leo
 	"seagreen", //virgo
 	"teal", //libra
 	"royalblue", //scorpio
 	"navy", //sagittarius
 	"indigo", //capricorn
 	"purple", //aquarius
-	"orchid" //pisces
+	"#990099" //pisces
 ];
 
 //pick random sign
@@ -254,5 +254,44 @@ $( ".signWord" ).html(randomSignWord);
 $( ".word2" ).html(randomWord2);
 $( ".word3" ).html(randomWord3);
 $( ".reasonWord" ).html(randomReason);
+
+
+// bonus: random tarot card (major arcana only)
+// images from wikimedia commons
+var tarotCard = [
+  "\"https://upload.wikimedia.org/wikipedia/commons/0/09/The_Illustrated_Key_to_the_Tarot_p._81.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/1/10/The_Illustrated_Key_to_the_Tarot_p._41.png\"", 
+  "\"https://upload.wikimedia.org/wikipedia/commons/1/11/The_Illustrated_Key_to_the_Tarot_p._43.png\"", 
+  "\"https://upload.wikimedia.org/wikipedia/commons/1/1a/The_Illustrated_Key_to_the_Tarot_p._45.png\"", 
+  "\"https://upload.wikimedia.org/wikipedia/commons/7/74/The_Illustrated_Key_to_the_Tarot_p._47.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/9/95/The_Illustrated_Key_to_the_Tarot_p._49.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/1/18/The_Illustrated_Key_to_the_Tarot_p._51.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/5/5d/The_Illustrated_Key_to_the_Tarot_p._53.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/6/69/The_Illustrated_Key_to_the_Tarot_p._55.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/3/36/The_Illustrated_Key_to_the_Tarot_p._57.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/0/05/The_Illustrated_Key_to_the_Tarot_p._59.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/d/d9/The_Illustrated_Key_to_the_Tarot_p._61.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/5/52/The_Illustrated_Key_to_the_Tarot_p._63.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/a/a5/The_Illustrated_Key_to_the_Tarot_p._65.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/6/61/The_Illustrated_Key_to_the_Tarot_p._67.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/f/fa/The_Illustrated_Key_to_the_Tarot_p._69.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/9/92/The_Illustrated_Key_to_the_Tarot_p._71.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/0/09/The_Illustrated_Key_to_the_Tarot_p._73.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/3/36/The_Illustrated_Key_to_the_Tarot_p._75.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/6/69/The_Illustrated_Key_to_the_Tarot_p._77.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/5/51/The_Illustrated_Key_to_the_Tarot_p._79.png\"",
+  "\"https://upload.wikimedia.org/wikipedia/commons/8/86/The_Illustrated_Key_to_the_Tarot_p._83.png\""
+];
+
+// pick random card
+// 1
+var cardIndex = Math.floor(Math.random()*tarotCard.length);
+root.style.setProperty('--card', "url(" + tarotCard[cardIndex] + ")");
+// 2
+var cardIndex2 = Math.floor(Math.random()*tarotCard.length);
+root.style.setProperty('--card2', "url(" + tarotCard[cardIndex2] + ")");
+// 3
+var cardIndex3 = Math.floor(Math.random()*tarotCard.length);
+root.style.setProperty('--card3', "url(" + tarotCard[cardIndex3] + ")");
 
 });
