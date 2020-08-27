@@ -1,43 +1,109 @@
+:root {
+	--sign:crimson;
+}
+
 body {
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: freight-text-pro, serif;
 	font-size: 60px;
-	text-align: center;
+
 }
 
 a {
 	color:red;
 }
 
+.signSymbol {
+	font-family: Segoe UI Symbol;
+}
+
+/*
+
+Inspired by: https://twitter.com/BNArchive/status/948601199254736896/photo/1
+
+*/
+
+#background {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+
+	background:var(--sign);
+	opacity:0.5;
+}
+
 
 .poster {
-	max-width:100vw;
+	z-index:3;
+
+	max-width:80vw;
 	min-height:155vh;
 
-	padding-top:0.5em;
+	margin:auto;
+	margin-top:10vw;
+	margin-bottom:10vw;
 
-	background-image: linear-gradient(to right, red, yellow);
+	padding:20px;
+
+	border:1px solid black;
+	box-shadow: 5px 5px 12px 2px rgba(0,0,0,0.3);
+
+	background:#fff;
 }
 
-.poster span {
-	color:white;
-}
 
 #info {
 	width:100%;
-	position:fixed;
-	top:0px;
 
-	font-size:40px;
-	text-align:left;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	text-align:center;
 	text-transform:uppercase;
-	mix-blend-mode: difference;
-}
-.info-block {
-	margin:15px;
 }
 
-.info-block:nth-child(even) {
-	text-align:right;
+.info-block {
+	padding-top:1vw;
+	padding-bottom:1vw;
+	flex-grow:1;
+}
+
+.info-block:nth-child(odd) {
+	width:18%;
+
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+
+	font-size:1.5vw;
+	font-weight:bold;
+	letter-spacing:0.05em;
+}
+
+.t-sub {
+	width:60%;
+
+	font-family: amador, serif;
+	font-size:4vw;
+	text-transform:capitalize;
+}
+
+.t-date {
+	flex-grow:3;
+	width:100%;
+
+	margin-top:1em;
+
+	border-top:3px double black;
+	border-bottom:3px double black;
+
+	padding:0.5em;
+
+	font-size:16px;
+	word-spacing:0.15em;
 }
 
 .sentence {
@@ -51,4 +117,128 @@ a {
 	text-align:left;
 	line-height:0.8em;
 	color:black;
+}
+
+.heading {
+	margin-top:0.4em;
+
+
+	font-family:freighttextcmp-pro, serif;
+	font-weight:900;
+	font-size:6vw;
+	text-transform:uppercase;
+	text-align:justify;
+	letter-spacing:0.05em;
+	line-height:0.3em;
+	font-stretch: extra-condensed;
+}
+
+.space {
+	display:inline-block;
+	height:0.25em;
+	width:100%;
+}
+
+
+.columns {
+	display:flex;
+	justify-content:space-between;
+	align-items:top;
+	grid-gap:0.3vw;
+}
+
+.tall {
+	min-height:100vh;
+}
+
+.col {
+	height:100%;
+	padding-left:15px;
+	padding-right:15px;
+
+	flex-grow:1;
+}
+
+.w1-3 {
+	width:30%;
+}
+
+.border-left {
+	border-left:1px solid black;
+}
+
+.border-right {
+	border-right:1px solid black;
+}
+
+h1 {
+	font-family:freighttextcmp-pro, serif;
+	font-weight:700;
+	font-size:3vw;
+	text-align:justify;
+
+	margin-bottom:0.25em;
+}
+
+h2 {
+	font-family:freight-text-pro, serif;
+	font-weight:bold;
+	font-size:1.5vw;
+	font-style:italic;
+	text-align:justify;
+
+	margin-bottom:1em;
+	margin-top:0.5em;
+}
+
+h3 {
+	font-family:freight-text-pro, serif;
+	font-weight:bold;
+	font-size:1vw;
+	font-style:italic;
+	text-align:justify;
+
+	margin-bottom:1em;
+	margin-top:0.5em;
+}
+
+p {
+	font-family:freight-text-pro, serif;
+	font-size:1vw;
+	text-align:justify;
+	margin-bottom:0.5em;
+	margin-top:0.5em;
+	text-indent:1em;
+}
+
+.fakeimg {
+	width:100%;
+	border:1px solid black;
+	height:35vh;
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	font-size:10vw;
+
+	background:rgba(0,0,0,0.1);
+}
+
+.advert {
+	margin-top:15px;
+	border:1px dotted black;
+	height:15vh;
+
+	font-size:1.25vw;
+	font-weight:bold;
+	text-align:center;
+	text-transform:uppercase;
+	line-height:1.3em;
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	padding:10px;
 }
