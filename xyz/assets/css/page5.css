@@ -1,6 +1,7 @@
 :root {
 	--size-type:45px;
 	--sign:crimson;
+	--grey:#3a3a3a;
 }
 
 body {
@@ -11,21 +12,24 @@ body {
 	text-transform: uppercase;
 	letter-spacing:-0.03em;
 
-	width:100vw;
-	height:100vh;
+	height:250vh;
 
 	overflow-x: hidden;
-	overflow-y: hidden;
 
-	color:black;
+	color:var(--grey);
 
-	background: linear-gradient(45deg, var(--sign), #fbfbfb);
-	background-size: 400% 400%;
-	animation: movingGradient 5s linear 0s infinite;
+/*	background: linear-gradient(to top, var(--sign), #fbfbfb);
+	background-size: 200% 200%;*/
+	background:#fbfbfb;
 }
 
 a {
 	color:red;
+}
+
+#poster {
+	width:100vw;
+	height:200vh;
 }
 
 #info {
@@ -33,23 +37,24 @@ a {
 	top:1vw;
 	right:1.5vw;
 
+	font-size:3.8vh;
 	font-weight: 400;
 	text-align: right;
 }
 
 .t-date {
-	border-top: 2px solid black;
+	border-top: 2px solid var(--grey);
 	padding-top:0.1em;
 }
 
 .t-mada {
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
+	border-top: 2px solid var(--grey);
+	border-bottom: 2px solid var(--grey);
 	padding-top:0.1em;
 }
 
 .t-sub {
-	border-top: 2px solid black;
+	border-top: 2px solid var(--grey);
 	padding-top:0.1em;
 }
 
@@ -57,26 +62,31 @@ a {
 	font-size:4vw;
 
 	animation: lineheight 3s ease-out 0s infinite alternate;
+
+	color:white;
 }
 
 .angle-left {
-	position:fixed;
+	position:absolute;
 	width:50vw;
-	top:64.5vh;
-	right:63vw;
+	top:40vh;
+	right:66%;
 
 	transform:rotate(-25deg) skew(-25deg);
+	transform-origin:top right;
 
 	text-align:right;
+
 }
 
 .angle-right {
-	position:fixed;
+	position:absolute;
 	width:65vw;
-	top:70.5vh;
-	left:33vw;
+	top:40vh;
+	left:36%;
 
 	transform:rotate(25deg) skew(25deg);
+	transform-origin:top left;
 
 	text-align:left;
 }
@@ -89,6 +99,28 @@ a {
 	opacity:33%;
 }
 
+.bg-left {
+	height:200vh;
+
+	z-index:-1;
+
+	right:65%;
+	background:linear-gradient(215deg, var(--sign), rgba(255,255,255,0));
+	transform-origin:top right;
+	opacity:0.7;
+}
+
+.bg-right {
+	height:200vh;
+
+	z-index:-1;
+
+	left:35%;
+	background:linear-gradient(-215deg, var(--sign), rgba(255,255,255,0));
+	transform-origin:top left;
+	opacity:0.6;
+}
+
 /*
 .skew-left {
 	letter-spacing:-0.2em;
@@ -96,6 +128,10 @@ a {
 	transform:skew(23deg);
 }
 */
+
+.container {
+	max-height:250vh;
+}
 
 /* animations */
 
