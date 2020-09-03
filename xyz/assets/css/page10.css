@@ -39,7 +39,7 @@ Inspired by: https://twitter.com/BNArchive/status/948601199254736896/photo/1
 	z-index:3;
 
 	max-width:80vw;
-	min-height:155vh;
+	min-height:130vh;
 
 	margin:auto;
 	margin-top:10vw;
@@ -145,7 +145,7 @@ Inspired by: https://twitter.com/BNArchive/status/948601199254736896/photo/1
 	flex-wrap:wrap;
 	justify-content:space-between;
 	align-items:top;
-	grid-gap:0.3vw;
+	grid-gap:0.75vw;
 }
 
 .tall {
@@ -161,7 +161,6 @@ Inspired by: https://twitter.com/BNArchive/status/948601199254736896/photo/1
 }
 
 .col {
-	padding-left:15px;
 
 	flex-grow:1;
 
@@ -177,16 +176,43 @@ Inspired by: https://twitter.com/BNArchive/status/948601199254736896/photo/1
 
 .border-left {
 	border-left:1px solid black;
+	padding-left:0.75vw;
 }
 
 .border-right {
 	border-right:1px solid black;
+	padding-right:0.75vw;
 }
 
 .article {
 	margin-bottom:20px;
 	overflow-y:scroll;
-	padding-right:10px;
+	position:relative;
+
+	padding-bottom:20px;
+
+}
+
+/*.article:after {
+	content:"";
+	position:absolute;
+	top:0; left:0; right:0; bottom:0;
+	box-shadow:inset 0px -50px 30px -30px white;
+}*/
+
+.innershadow {
+	position:relative;
+	width:100%;
+}
+
+.innershadow:after {
+	content:" ";
+	position:absolute;
+	top:-49px;
+	height:30px;
+	width:100%;
+	overflow:hidden;
+	background:linear-gradient(to top, white 20%, rgba(255, 255, 255, 0) 100%);
 }
 
 h1 {
@@ -205,7 +231,7 @@ h2 {
 	font-style:italic;
 	text-align:justify;
 
-	margin-bottom:1em;
+	margin-bottom:0.5em;
 	margin-top:0.5em;
 }
 
@@ -232,7 +258,7 @@ p {
 .fakeimg {
 	width:100%;
 	border:1px solid black;
-	height:35vh;
+	height:3em;
 
 	display:flex;
 	justify-content:center;

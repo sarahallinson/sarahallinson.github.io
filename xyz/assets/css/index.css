@@ -40,11 +40,12 @@ h1 {
 	font-family: Segoe UI Emoji;
 }
 
+.symbol {
+	font-family: Segoe UI Symbol;
+}
+
 
 #main {
-	width:100vw;
-	min-height:100vh;
-
 	display:flex;
 	flex-wrap:wrap;
 	grid-gap:10px;
@@ -59,8 +60,9 @@ h1 {
 	border-radius:20px;
 	padding:18px;
 
-	min-width:22vw;
-	min-height:22vh;
+	/*min-width:22vw;*/
+	/*min-height:22vh;*/
+	flex-basis:30vw;
 
 	flex-grow:1;
 	flex-shrink:1;
@@ -86,21 +88,66 @@ h1 {
 	overflow: hidden;
 }
 
-.card1 {
+
+.card {
+	background-size:contain;
+}
+
+.c1 {
 	background: var(--card) center;
 	background-size:contain;
 }
 
-.card2 {
+.c2 {
 	background: var(--card2) center;
 	background-size:contain;
 }
 
-.card3 {
+.c3 {
 	background: var(--card3) center;
 	background-size:contain;
 }
 
 .intro {
-	max-width:300px;
+	flex-basis:20vw;
+}
+
+.project {
+	flex-basis:40vw;
+}
+
+.showcase {
+	text-align:center;
+	display:flex;
+	align-items:center;
+
+	font-size:3vh;
+	font-style:normal;
+
+	min-height:30vh;
+
+	background:#dcd4b0;
+	color:#584f22;
+}
+
+.showcase:hover {
+	font-style:italic;
+	text-decoration:none;
+	background:#eac52c;
+	animation: fade 0.5s linear;
+}
+
+.w100 {
+	width:100%;
+}
+
+/* animation */
+
+@keyframes fade {
+	0% {
+		background:#dcd4b0;
+	}
+	100% {
+		background:#eac52c;
+	}
 }

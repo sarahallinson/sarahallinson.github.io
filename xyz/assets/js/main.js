@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 // Consistent terms:
 
-var posterDate = "28.08.20";
+var posterDate = "04.09.20";
 var posterSub = "Online poster exhibition";
 var posterCred = "MADA";
 
