@@ -21,6 +21,7 @@ body {
 	/*background:black;
 	color:white;*/
 	color:var(--color-dark);
+	background-image:url("../../assets/images/PaleUniform.png");
 }
 
 img {
@@ -80,7 +81,7 @@ i {
 	position:fixed;
 	top:15vh;
 	right:0;
-	max-width:500px;
+	max-width:650px;
 	padding:var(--spacing);
 	z-index:1;
 }
@@ -186,13 +187,6 @@ i {
 	z-index:0;
 }
 
-.heading {
-	flex-basis:100%;
-	/*position:sticky;
-	top:0;
-	left:0;*/
-}
-
 .text {
 	flex-basis:100%;
 	flex-grow:1;
@@ -223,6 +217,10 @@ i {
 
 .essay .child:nth-child(4n) {
 	margin-left:15vw;
+}
+
+.child.heading {
+	background-color:transparent;
 }
 
 .big {
@@ -269,7 +267,7 @@ i {
 
 /* Mobile responsiveness */
 
-@media (max-width: 1920px) {
+@media (min-width: 1900px) {
 	body {
 		font-size:20px;
 	}
@@ -281,6 +279,25 @@ i {
 
 	.essay .child {
 		max-width:700px;
+	}
+}
+
+@media (max-width: 1900px) {
+	body {
+		font-size:20px;
+	}
+
+	.essay {
+		max-width:75%;
+		margin-left:var(--spacing);
+	}
+
+	.essay .child {
+		max-width:700px;
+	}
+
+	.sidebar {
+		max-width:500px;
 	}
 }
 
