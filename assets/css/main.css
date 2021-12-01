@@ -4,6 +4,7 @@
 	--spacing:15px;
 	--color-accent:#FF6F59;
 	--color-dark:#505050;
+	--color-reverse:#0090A6; /* opposite of color-accent */
 	--border:1px dashed var(--color-accent);
 	--txtsize-default:15px;
 	--txtsize-large:18px;
@@ -101,7 +102,7 @@ i {
 	width:var(--sidebar);
 	padding:var(--spacing);
 	z-index:1;
-	mix-blend-mode:difference;
+	/*mix-blend-mode:difference;*/
 }
 
 .nav {
@@ -147,6 +148,58 @@ i {
 
 .navtitle a {
 	height:46px;
+}
+
+.navmenu {
+	position:relative;
+	top:-50px;
+	height:50px;
+	margin-left:52px;
+	margin-right:52px;
+
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:center;
+
+	mix-blend-mode:difference;
+}
+
+.navitem {
+	height:100%;
+	width:50px;
+
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.navmenu a {
+	height:100%;
+	border-width:0 0 0 0;
+}
+
+.navmenu a:hover .navsymbol {
+	background:var(--color-accent);
+}
+
+.navsymbol {
+	height:16px;
+	width:16px;
+	border:1px solid var(--color-accent);
+}
+
+.circle {
+	border-radius:100%;
+}
+
+.square {
+	border-radius:1px;
+}
+
+.filled {
+	background:var(--color-accent);
 }
 
 .navblock {
@@ -369,6 +422,19 @@ i {
 		left:0;
 		width:calc(100% - 104px);
 		z-index:1;
+	}
+
+	.navmenu {
+		position:fixed;
+		top:0px;
+		left:0;
+		width:calc(100% - 104px);
+		z-index:1;
+	}
+
+	.navsymbol {
+		height:20px;
+		width:20px;
 	}
 
 	.copyright {
